@@ -9,10 +9,10 @@ api_router = APIRouter(tags=['Clientes'])
 
 @api_router.get('/contact-tag')
 async def contact_tag(request: Request, tag_name: str = Query('')):
+    tag_name = tag_name.strip()
     db = request.app.state.db
     
     d = await get_data(db, tag_name)
-    print(d)
     return d
 
 

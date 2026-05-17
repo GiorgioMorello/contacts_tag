@@ -16,6 +16,8 @@ class Settings(BaseSettings):
     DB_USER: str
     DB_PASSWORD: str
     
+    CORS_ORIGINS: list[str]
+    
     model_config = SettingsConfigDict(
         validate_assignment=True,
         env_file='.env',
