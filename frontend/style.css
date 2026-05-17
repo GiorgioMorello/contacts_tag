@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: #1d1b1b;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+
+main, header {
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    color: #ddd
+}
+
+
+input {
+    border: none;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+}
+
+button {
+    border: none;
+    background-color: #ddd;
+    color: #222;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #222;
+    color: #ddd
+}
+
+
+
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+
+
+}
+
+
+.table_container {
+    max-height: 70rem;
+    overflow-y: scroll;
+
+}
+
+
+table {
+    border-collapse: collapse;
+    min-width: 700px;
+}
+
+thead th {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #222;
+}
+
+th,
+td {
+    padding: 1rem;
+    text-align: left;
+    border: 1px solid #ccc;
+
+}
+
+tr:nth-child(even) td {
+    background-color: #ddd;
+}
+
+th {
+    color: #ddd
+}
